@@ -13,7 +13,7 @@ export const AnswerSection = ({ activeTab }) => {
   return (
     <div className="flex-1 overflow-y-auto px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto pb-20">
-        {/* Tabs */}
+
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 mb-6 sm:mb-8">
           <div className="flex gap-4 sm:gap-8 overflow-x-auto scrollbar-hide">
             {["Answer", "Timeline", "Sources (12)"].map((tab) => (
