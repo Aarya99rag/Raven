@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { EVIDENCE_ITEMS } from "../data/mockData";
 
-export const AnswerSection = ({ activeTab }) => {
+export const AnswerSection = ({ activeTab, setActiveTab }) => {
   return (
     <div className="flex-1 overflow-y-auto px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto pb-20">
@@ -19,7 +19,7 @@ export const AnswerSection = ({ activeTab }) => {
             {["Answer", "Timeline", "Sources (12)"].map((tab) => (
               <button
                 key={tab}
-                onClick={() => setActiveTab(tab)}
+                onClick={() => setActiveTabsss(tab)}
                 className={`pb-3 sm:pb-4 whitespace-nowrap text-sm font-medium transition-all relative ${
                   activeTab === tab
                     ? "text-blue-600"
