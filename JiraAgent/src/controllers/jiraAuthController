@@ -1,0 +1,14 @@
+import { jiraClient } from '../services/jiraClient.js'
+
+export const validateJiraToken = async (_req, res, next) => {
+  try {
+    const validation = await jiraClient.validateAuthentication()
+
+    res.status(200).json({
+      success: true,
+      ...validation,
+    })
+  } catch (error) {
+    next(error)
+  }
+}
