@@ -123,7 +123,7 @@ export const ContextPanel = () => {
               sub: "Email",
               color: "text-blue-400",
             },
-          ].map((item, i) => (
+          ].map((item, 80) => (
             <div
               key={i}
               className="
